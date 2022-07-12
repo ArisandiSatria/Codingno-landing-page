@@ -1,0 +1,532 @@
+/* Base Start */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin:0; 
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: .2s linear;
+}
+
+:root{
+    --main-color:rgb(15, 76, 117);
+    --color-2: rgb(50, 130, 184);
+    --color-3:rgba(187, 225, 250);
+    --color-4:rgb(27, 38, 44);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: rgb(250, 253, 255) !important; 
+}
+
+section{
+    padding: 2rem;
+}
+
+h1, h3{
+    color: var(--main-color);
+}
+
+/* Base End */
+
+/* Header Start */
+header nav{
+    padding: 1.5rem 0;
+    background-color: var(--main-color);
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.1rem;
+}
+
+header nav .logo img{
+    position: absolute;
+    top: -2rem;
+    left: 5rem;
+    width: 8rem;
+}
+
+header nav .navigasi a{
+    color: var(--color-2);
+    margin: 0 1rem;
+    outline: none;
+}
+
+header nav .navigasi a:hover{
+    color: #fff;
+}
+
+header nav .navigasi a:nth-last-child(1){
+    background-color: var(--color-2);
+    color: #fff;
+    border-radius: .5rem;
+    padding: .5rem;
+}
+
+header nav .navigasi a:nth-last-child(1):hover{
+    box-shadow: 0 0 1rem #fff;
+}
+/* Header End */
+
+/* Jumbotron Start */
+.jumbotron{
+    padding: 3rem;
+    display: flex;
+    justify-content: space-around;
+    color: var(--color-4);
+}
+
+.jumbotron .foto-jumbotron img{
+    width: 35rem;
+    margin: 0 2rem 0 0;
+}
+
+.jumbotron .isi-jumbotron h1{
+    margin: 5rem 0 3rem;
+}
+
+.btn-jumbotron, .jumbotron .isi-jumbotron a{
+    background-color: var(--color-2);
+    border: 0 solid transparent;
+    border-radius: .3rem;
+    font-size: 1rem;
+    color: #fff;
+    padding: .5rem;
+}
+
+.jumbotron .isi-jumbotron p{
+    margin: 0 0 5rem;
+}
+
+.jumbotron .isi-jumbotron a{
+    outline: none;
+    
+}
+
+.jumbotron .isi-jumbotron a:hover{
+    letter-spacing: .1rem;
+    cursor: pointer;
+}
+/* Jumbotron End */
+
+/* Jasa Start */
+.jasa{
+    padding: 3rem;
+    text-align: center;
+}
+
+.jasa h3{
+    margin: 0 0 1rem;
+}
+
+.card-jasa{
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+}
+
+.card-1, .card-2, .card-3{
+    border: .2rem solid var(--color-3);
+    border-radius: .3rem;
+}
+
+.card-1:hover, .card-2:hover, .card-3:hover{
+    background-color: var(--color-3);
+}
+
+.judul-card-1, .judul-card-2, .judul-card-3{
+    background-color: var(--color-2);
+    border-radius: .2rem .2rem 0 0;
+    color: #fff;
+    padding: .5rem;
+    font-size: 1.5rem;
+}
+
+.isi-card-1 .harga-card-1, .isi-card-2 .harga-card-2, .isi-card-3 .harga-card-3{
+    padding: 3rem 0;
+    font-size: 2rem;
+}
+
+.isi-card-1 li, .isi-card-2 li, .isi-card-3 li{
+    text-decoration: none;
+    list-style: none;
+    padding: .5rem 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-card-1, .btn-card-2, .btn-card-3{
+    margin: 1rem 0;
+    background-color: var(--color-2);
+    border: 0 solid transparent;
+    border-radius: .3rem;
+    font-size: 1rem;
+    color: #fff;
+    padding: .5rem;
+    outline: none;
+}
+
+.btn-card-1:hover, .btn-card-2:hover, .btn-card-3:hover{
+    letter-spacing: .1rem;
+    cursor: pointer;
+}
+/* Jasa End */
+
+/* Proyek Start */
+.proyek{
+    text-align: center;
+    margin: 2rem 0 0;
+}
+
+.proyek .image{
+    padding: 3rem 3rem 0;
+    display: flex;
+    flex: wrap;
+}
+
+.proyek .image .image-1{
+    width: 50%;
+    margin: auto;
+}
+
+.proyek .image .image-1 img{
+    width: 100%;
+    padding: 0 1rem;
+}
+/* Proyek End */
+
+/* Tim Start */
+.tim{
+    text-align: center;
+    margin: 2rem 0 0;
+}
+
+.tim .card-tim{
+    margin: 3rem auto;
+    width: 17%;
+    padding: .5rem 0;
+    background-color: var(--color-3);
+    border: .2rem solid var(--color-2);
+    border-radius: .5rem;
+}
+
+.tim .card-tim .foto-card-tim img{
+    width: 10rem;
+}
+
+.tim .card-tim .isi-card-tim{
+    margin: 1rem 0;
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    color: var(--main-color);
+}
+
+.tim .card-tim .isi-card-tim .identitas-card{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    gap: .5rem;
+    text-align: center;
+    font-size: .8rem;
+
+}
+/* Tim End */
+
+/* Kontak Start */
+.kontak{
+    text-align: center;
+    margin: 2rem 0 0;
+    color: var(--main-color);
+}
+
+.kontak .akun-kontak{
+    padding: 2rem 2rem;
+    margin: 2rem auto;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    background-color: var(--color-3);
+    border: .2rem solid var(--main-color);
+    border-radius: 1rem;
+}
+
+.kontak .akun-kontak .whatsapp, .kontak .akun-kontak .instagram{
+    display: flex;
+    padding: 1rem;
+}
+
+.kontak .akun-kontak .whatsapp span, .kontak .akun-kontak .instagram span{
+    padding: .5rem;
+}
+
+.kontak .akun-kontak img{
+    width: 2rem;
+    height: 2rem;
+}
+/* Kontak End */
+
+/* Footer Start */
+footer .credit{
+    text-align: center;
+    margin: 5rem 0 0;
+    padding: 1rem;
+    background-color: var(--main-color);
+    color: var(--color-3);
+}
+
+footer .credit span{
+    color: #fff;
+}
+/* Footer End */
+
+/* Responsive Breakpoint */
+
+/* Hamburger Menu Start */
+.hamburger-menu-toggle {
+    display: none;
+    flex-direction: column;
+    height: 1.5rem;
+    justify-content: space-between;
+    position: relative;
+}
+
+.hamburger-menu-toggle input {
+    position: absolute;
+    width: 4rem;
+    height: 1.8rem;
+    left: -1.1rem;
+    top: -.1rem;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.hamburger-menu-toggle span {
+    display: block;
+    width: 1.7rem;
+    height: .2rem;
+    background-color: var(--color-2);
+    border-radius: .2rem;
+    transition: all .5s;
+}
+
+.hamburger-menu-toggle span:nth-child(2) {
+    transform-origin: 0 0;
+}
+
+.hamburger-menu-toggle span:last-child {
+    transform-origin: 0 100%;
+}
+
+.hamburger-menu-toggle input:checked ~ span:nth-child(2) {
+    background-color: white;
+    transform: rotate(43deg) translate(0, -.1rem);
+    width: 2.1rem;
+}
+
+.hamburger-menu-toggle input:checked ~ span:last-child {
+    background-color: white;
+    transform: rotate(-42deg) translate(0, 0);
+    width: 2.1rem;
+}
+
+.hamburger-menu-toggle input:checked ~ span:nth-child(3) {
+    opacity: 0;
+    transform: scale(0);
+}
+
+.hamburger-menu-toggle input:checked {
+    transform: translate(-.1rem, -.1rem);
+}
+/* Hamburger Menu End */
+
+/* Mobile */
+@media screen and (max-width: 700px) {
+    /* Hamburger Menu Start */
+    .hamburger-menu-toggle{
+        display: flex;
+        position: relative;
+        right: -4rem;
+        z-index: 999;
+    }
+
+    .hamburger-menu-toggle span{
+        position: relative;
+    }
+    /* Hamburger Menu End */
+
+    /* Header Start */
+    header nav{
+        padding: 1rem 0;
+    }
+
+    header nav .logo img{
+        position: absolute;
+        top: -1.3rem;
+        left: -.5rem;
+        width: 6rem;
+    }
+
+    header nav .navigasi{
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 80%;
+        height: 100vh;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--color-2);
+        z-index: 5;
+        transform: translateX(100%);
+        transition: all 1s;
+        opacity: 0;
+    }
+
+    header nav .navigasi a{
+        color: #fff;
+    }
+
+    header nav .navigasi.slide {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    /* Header End */
+
+    /* Jumbotron Start */
+
+    .jumbotron{
+    flex-direction: column;
+    }
+
+    .jumbotron .foto-jumbotron img{
+    width: 100%;
+    margin: 1rem 2rem 0 0;
+    }
+
+    .jumbotron .isi-jumbotron h1{
+        margin: 2rem 0 1rem;
+    }
+    
+    .btn-jumbotron, .jumbotron .isi-jumbotron a{
+        background-color: var(--color-2);
+        border: 0 solid transparent;
+        font-size: 1rem;
+        padding: .5rem;
+    }
+    
+    .jumbotron .isi-jumbotron p{
+        margin: 0 0 2rem;
+    }
+
+    .jumbotron .isi-jumbotron a:hover{
+        letter-spacing: 0;
+    }
+
+    .jumbotron .isi-jumbotron a:active{
+        background-color: var(--main-color);
+    }
+    /* Jumbotron End */
+
+    /* Jasa Start */
+    .jasa{
+        padding: 1rem;
+    }
+
+    .jasa h3{
+        margin: 0 0 1rem;
+    }
+
+    .card-jasa{
+        flex-direction: column;
+    }
+
+    .card-1, .card-2, .card-3{
+        margin-bottom: 1rem;
+    }
+
+    .card-1:hover, .card-2:hover, .card-3:hover{
+        background-color: transparent;
+    }
+
+    .btn-card-1:hover, .btn-card-2:hover, .btn-card-3:hover{
+        letter-spacing: 0;
+    }
+
+    .btn-card-1:active, .btn-card-2:active, .btn-card-3:active{
+        background-color: var(--main-color);
+    }
+    /* Jasa End */
+
+    /* Proyek Start */
+    .proyek{
+        text-align: center;
+        margin: 0;
+    }
+
+    .proyek .image{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .proyek .image .image-1{
+        width: 100%;
+    }
+
+    .proyek .image .image-1 img{
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+    .proyek .image .image-wrap{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .proyek .image .image-wrap .image-3 img{
+        display: none;
+    }
+    /* Proyek End */
+
+    /* Tim Start */
+    .tim{
+        margin: 3rem 0 0;
+    }
+
+    .tim .card-tim{
+        width: 90%;
+    }
+    /* Tim End */
+
+    /* Kontak Start */
+    .kontak{
+        margin: 2rem 0 0;
+    }
+
+    .kontak .akun-kontak{
+        padding: 0 0 0 2.5rem;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    /* Kontak End */
+
+    /* Footer Start */
+    footer .credit{
+        font-size: .5rem;
+    }
+    /* Footer End */
+}
